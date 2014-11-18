@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Beales Shoes</title>
+		<meta charset="utf-8">
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="js/bjqs-1.3.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		
+		<link rel="icon" href="image/faviconb.ico" type="image/ico" />
+		
+	</head>
+	<body>
+<!-- thin bar at top-->
+		<div class="header1">
+			<a href="contact.html"> <span class="findus">contact us: </span></a>
+			<span> &emsp; 01-4498778&emsp;</span>
+		</div>
+<!-- header with company name and nav bar -->
+		<div class="header2">
+			<div class="bealename">
+				<span class="bealeword"> Beales</span> <span class="shoeword"> shoes</span>
+			</div>
+			<div class="menubar">
+				<a href="contact.html" class="fright"> contact </a> &ensp; 
+				<a href="bags.html" class="fright"> bags </a> &ensp;
+				<a href="footwear.html" class="fright"> footwear </a> &ensp;
+				<a href="#" class="fright"> home </a> &ensp;
+			</div>
+		</div>
+<!-- div for content images  -->
+	<div class="options">
+      <div id="banner-slide">
+        <!-- start Basic Jquery Slider -->
+        <ul class="bjqs">
+          <li><img src="image/campaign_4.jpg" alt="fashion image" ></li>
+          <li><img src="image/campaign_1.jpg" alt="fashion image" ></li>
+		  <li><img src="image/campaign_2.jpg" alt="fashion image" ></li>
+		  <li><img src="image/campaign_3.jpg" alt="fashion image" ></li>
+        </ul>
+        <!-- end Basic jQuery Slider -->
+		</div>
+      <script class="secret-source">
+        jQuery(document).ready(function($) {
+          $('#banner-slide').bjqs({
+            animtype      : 'slide',
+            height        : 400,
+            width         : 700,
+            responsive    : true,
+            randomstart   : true,
+			pauseControls :true,
+			keyboardnav :true,
+			hoverpause :true,
+			timeout: 800,
+			
+          });      
+        });
+      </script>
+	  <br />
+		<p class="text">Beales Shoes in an online shop selling a handpicked exclusive selection of footwear and bags from top designers.</p>
+      
+    </div><!-- end of slider-->
+	<!-- footer-->
+		<div class="footer">
+			<a href="http://facebook.com" target="_blank" >
+				<img src="image/facebook.png" class="icon" alt="fb" /></a>
+			<a href="http://ie.linkedin.com/in/leonabeale" target="_blank" >
+				<img src="image/linkedin.png" class="icon" alt="li" /></a>
+			<a href="http://www.twitter.com" target="_blank" >
+				<img src="image/twitter.png" class="icon" alt="tw" /></a>
+			<a href="mailto:Leona.beale@ncirl.ie">
+				<img src="image/mail.png" class="icon" alt="ma" /></a>
+			<a href="contact.html"> <span class="findus" id="signup"> &ensp;sign up for the newsletter&ensp; </span></a>
+			<p class="copy">&copy;Thornbury and Cullen 2013</p>
+		</div>
+	</body>
+</html>

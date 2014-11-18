@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Beales footwear</title>
+		<meta charset="utf-8">
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="js/bjqs-1.3.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="icon" href="image/faviconb.ico" type="image/ico" />
+	</head>
+	<body>
+		<div class="header1">
+			<a href="contact.html"> <span class="findus">contact us: </span></a><span> &emsp; 01-4498778&emsp;</span>
+		</div>
+		<div class="header2">
+			<div class="bealename">
+				<span class="bealeword"> Beales</span> <span class="shoeword"> shoes</span>
+			</div>
+			<div class="menubar">
+				<a href="contact.html" class="fright"> contact </a> &ensp; 
+				<a href="bags.html" class="fright"> bags </a> &ensp;
+				<a href="#" class="fright"> footwear </a> &ensp;
+				<a href="index.html" class="fright"> home </a> &ensp;
+			</div>
+		</div>
+		<div class="options3"><!--container for pics-->
+			<div class="block"><img src="image/logocl.jpg" alt="logo" /></div>
+			<div class="block"><img src="image/logodune.jpg" alt="logo" /></div>
+			<div class="block"><img src="image/logocarls.jpg" alt="logo" /></div>
+			<div class="block"><img src="image/logomarc.jpg" alt="logo" /></div>
+			<!--<br /><br /><br /><br /><br />
+			<div class="block"><img src="image/logomulber.jpg" alt="logo" /></div>
+			<div class="block"><img src="image/logokm.jpg" alt="logo" /></div>
+			<div class="block"><img src="image/logojc.jpg" alt="logo" /></div>
+			<div class="block"><img src="image/logohun.jpg" alt="logo" /></div>
+			-->
+			
+			<!--jQuery(document).ready(function($)--> 
+				<script>
+				$( "#go" ).ready(function() {
+				  $( ".block:first" ).animate({
+					left: 100
+				  }, {
+					duration: 1000,
+					step: function( now, fx ){
+					  $( ".block:gt(0)" ).css( "left", now );
+					}
+				  });
+				});
+
+				</script>
+		</div>
+		<!--<div class="options4">
+			<img src="image/a.jpg" alt="Jimmy Choo" width="150" height="150"/>
+			<img src="image/jimmy.jpg" alt="Jimmy Choo" width="150" height="150"/>
+			<img src="image/i.jpg" alt="Jimmy Choo" width="150" height="150"/>
+			<img src="image/r.jpg" alt="Jimmy Choo" width="150" height="150"/>
+			<img src="image/beale.jpg" alt="Chanel" width="150" height="150"/>
+			<img src="image/c.jpg" alt="Chanel" width="150" height="150"/>
+			<img src="image/image.jpg" alt="Chanel" width="150" height="150"/>
+			<img src="image/o.jpg" alt="Chanel" width="150" height="150"/>
+			<img src="image/t.jpg" alt="Dune" width="150" height="150"/>
+			<img src="image/shoe.jpg" alt="Dune" width="150" height="150"/>
+			<img src="image/boots.jpg" alt="Dune" width="150" height="150"/>
+			<img src="image/boot.jpg" alt="Dune" width="150" height="150"/>
+			<img src="image/karen.jpg" alt="Karen Millen" width="150" height="150"/>
+			<img src="image/karenm.jpg" alt="Karen Millen" width="150" height="150"/>
+			<img src="image/km.jpg" alt="Karen Millen" width="150" height="150"/>
+			<img src="image/kmboots.jpg" alt="Karen Millen" width="150" height="150"/>
+			<img src="image/hshoes.jpg" alt="Hunter" width="150" height="150"/>
+			<img src="image/hunter.jpg" alt="Hunter" width="150" height="150"/>
+			<img src="image/hunterboot.jpg" alt="Hunter" width="150" height="150"/>
+			<img src="image/huntershoes.jpg" alt="Hunter" width="150" height="150"/>
+			<img src="image/christian.jpg" alt="Christian Louboutin" width="150" height="150"/>
+			<img src="image/clshoes.jpg" alt="Christian Louboutin" width="150" height="150"/>
+			<img src="image/clboot.jpg" alt="Christian Louboutin" width="150" height="150"/>
+			<img src="image/clboots.jpg" alt="Christian Louboutin" width="150" height="150"/>
+			<img src="image/carl.jpg" alt="Carl Scapa" width="150" height="150"/>
+			<img src="image/carlshoe.jpg" alt="Carl Scapa" width="150" height="150"/>
+			<img src="image/csboot.jpg" alt="Carl Scapa" width="150" height="150"/>
+			<img src="image/csboots.jpg" alt="Carl Scapa" width="150" height="150"/>
+			<img src="image/marc.jpg" alt="Marc Jacobs" width="150" height="150"/>
+			<img src="image/mj.jpg" alt="Marc Jacobs" width="150" height="150"/>
+			<img src="image/mjboots.jpg" alt="Marc Jacobs" width="150" height="150"/>
+			<img src="image/mjboot.jpg" alt="Marc Jacobs" width="150" height="150"/>
+			<img src="image/mulberry.jpg" alt="Mulberry" width="150" height="150"/>
+			<img src="image/mulberryshoe.jpg" alt="Mulberry" width="150" height="150"/>
+			<img src="image/mulberryboot.jpg" alt="Mulberry" width="150" height="150"/>
+			<img src="image/mulboots.jpg" alt="Mulberry" width="150" height="150"/>
+			
+		
+		<br />	
+		</div>-->
+		<br /><br />	
+		<div class="footer">
+			<a href="http://facebook.com" target="_blank" >
+				<img src="image/facebook.png" class="icon" alt="fb" /></a>
+			<a href="http://ie.linkedin.com/in/leonabeale" target="_blank" >
+				<img src="image/linkedin.png" class="icon" alt="li" /></a>
+			<a href="http://www.twitter.com" target="_blank" >
+				<img src="image/twitter.png" class="icon" alt="tw" /></a>
+			<a href="mailto:Leona.beale@ncirl.ie">
+				<img src="image/mail.png" class="icon" alt="ma" /></a>
+			<a href="contact.html"> <span class="findus" id="signup"> &ensp;sign up for the newsletter&ensp; </span></a>
+			<p class="copy">&copy;Thornbury and Cullen 2013</p>
+		</div>
+	</body>
+</html>

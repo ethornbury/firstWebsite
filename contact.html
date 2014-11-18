@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Beales contact</title>
+		<meta charset="utf-8">
+		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script src="js/bjqs-1.3.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="icon" href="image/faviconb.ico" type="image/ico" />
+		<script>
+function validateForm()
+{
+var x=document.forms["myForm"]["email"].value;
+var atpos=x.indexOf("@");
+var dotpos=x.lastIndexOf(".");
+if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+  {
+  alert("Not a valid e-mail address");
+  return false;
+  }
+}
+</script>
+	</head>
+	<!-- bdy -->
+	<body>
+	<!-- thin bar at top-->
+		<div class="header1">
+			<a href="contact.html"> <span class="findus">contact us: </span></a><span>&emsp; 01-4498778&emsp;</span>
+		</div>
+	<!-- header with nav bar -->
+				
+		<div class="header2">
+		
+			<div class="bealename">
+				<span class="bealeword"> Beales</span> <span class="shoeword"> shoes</span>
+			</div>
+			<div class="menubar">
+				<a href="#" class="fright"> contact </a> &ensp; 
+				<a href="bags.html" class="fright"> bags </a> &ensp;
+				<a href="footwear.html" class="fright"> footwear </a> &ensp;
+				<a href="index.html" class="fright"> home </a> &ensp;
+			</div>
+			
+		</div>
+		
+	<!-- pics content goes in this one -->
+		<div class="options2">
+			<div class="details">
+				<!--<form class="c">-->
+				<form class="c" name="myForm" onsubmit="return validateForm();" method="post">
+					<div>
+						<p>contact us :</p>
+						<label><span> your name</span><input id="name" type="text" name="name" />  
+						</label>
+						<label>email <input id="email" type="text" name="email"/>
+						</label>
+						<label><span>message</span><textarea id="feedback" name="feedback"></textarea>
+						</label>
+						<input id="submit" type="submit" value="submit" />
+						<!--<input class="button" type="button" value="submit" />-->
+					</div>	
+				</form>
+			</div>
+		</div>
+	<!-- footer -->
+		<div class="footer">
+			<a href="http://facebook.com" target="_blank" >
+				<img src="image/facebook.png" class="icon" alt="fb" /></a>
+			<a href="http://ie.linkedin.com/in/leonabeale" target="_blank" >
+				<img src="image/linkedin.png" class="icon" alt="li" /></a>
+			<a href="http://www.twitter.com" target="_blank" >
+				<img src="image/twitter.png" class="icon" alt="tw" /></a>
+			<a href="mailto:Leona.beale@ncirl.ie">
+				<img src="image/mail.png" class="icon" alt="ma" /></a>
+			<p class="copy">&copy;Thornbury and Cullen 2013</p>
+		</div>
+	</body>
+</html>
